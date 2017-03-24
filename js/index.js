@@ -14,5 +14,10 @@ var gitid = function(id){
 };
 
 window.onload=function(){
-    
+    $("demo_one").swipeUp(function(){
+        $(".demo").css('transform','ranslateY(-100%)')
+    });
+    $("demo_one").swipeDown(function(){
+        $(".demo").css('transform','ranslateY(-200%)')
+    })
 }
