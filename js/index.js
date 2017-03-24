@@ -14,10 +14,16 @@ var gitid = function(id){
 };
 
 window.onload=function(){
-    $("demo_one").swipeUp(function(){
-        $(".demo").css('transform','ranslateY(-100%)')
+    $("#demo_one").tap(function(){
+        alert("你妈逼");
     });
-    $("demo_one").swipeDown(function(){
-        $(".demo").css('transform','ranslateY(-200%)')
-    })
+    $("#demo_one").doubleTap(function(){
+        alert("你妈逼1")
+    });
+    $("#demo_one").swipeUp(function(){
+        alert("你妈逼2");
+    });
+    $("#demo_one").swipeDown(function(){
+        alert("你妈逼3");
+    });
 }
